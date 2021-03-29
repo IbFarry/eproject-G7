@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Oral Health</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/project.css" rel="stylesheet" type="text/css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+		$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+
+$(window).load(function() {
+    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+    var itemlength = $('#myCarousel .item').length;
+    var triggerheight = Math.round(boxheight/itemlength+1);
+    $('#myCarousel .list-group-item').outerHeight(triggerheight);
+});
+
+var monthNames = [ "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December" ];
+var dayNames= ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
+
+var newDate = new Date();
+newDate.setDate(newDate.getDate() + 1);    
+$('#Date').html(dayNames[newDate.getDay()] + ", " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+	</script>
+</head>
+<body>
+<header>
+	<div class="small-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 date-sec">
+        <div id="Date"></div>
+      </div>
+            <div class="col-lg-3 offset-lg-5">
+        <div class="social-icon"> <a target="_blank" href="#" class=" fa fa-facebook"></a> <a target="_blank" href="#" class=" fa fa-twitter"></a> <a target="_blank" href="#" class=" fa fa-google-plus"></a> <a target="_blank" href="#" class=" fa fa-linkedin"></a> <a target="_blank" href="#" class=" fa fa-youtube"></a> <a target="_blank" href="#" class=" fa fa-vimeo-square"></a> </div>
+      </div>
+      </div>
+          </div>
+  </div>
+        <div class="top-head left">
+    <div class="container">
+            <div class="row">
+        <div class="col-md-6 col-lg-4">
+                <h1>Oral Health<small>Get informations for oral health</small></h1>
+              </div>
+      </div>
+          </div>
+  </div>
+</header>
+<section class="top-nav">
+    <nav class="navbar navbar-expand-lg py-0 navbar-light bg-light">
+        <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ">
+        <li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+             <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
+			 <li class="nav-item"><a class="nav-link" href="P.education.html">Patient education</a></li>
+			 <li class="nav-item"><a class="nav-link" href="Research.html">Research</a></li> 
+             <li class="nav-item"><a class="nav-link" href="Professionnal.E.html">Professional education</a></li>
+   			 <li class="nav-item"><a class="nav-link" href="About US.html">About Us</a></li>
+             <li class="nav-item"><a class="nav-link" href="contact us.html">Contact Us</a></li>
+      </ul>
+            <form class="ml-auto">
+        <div class="search">
+                <input type="text" class="form-control" maxlength="64" placeholder="Search" />
+                <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+              </div>
+      </form>
+          </div>
+  </div>
+      </nav>
+</section>
+	
+<section class="testimonials" id="gobottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="big-img">
+                      <a href="p.sideweb1.html">  <img src="img/E.toothbrush.jpg" class="img-fluid" alt=""> </a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="inner-section wow fadeInUp">
+						<h3><span class="bg-main"><a href="Products.html">Products</a></span></h3>
+                        <br>
+                        <p class="text-justify">To have good oral health, we need to take care of our teeth with the utensils necessary to clean and take care of our teeth. Here are some pictures of essential oral care supplies.</p>
+
+                        <div class="linear-grid">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3 mb-2 wow bounceInUp" data-wow-duration="1.4s">
+                                   <a href="p.sideweb3.html"> <img src="img/tooth pastes.jpg" class="img-thumbnail" alt=""> </a>
+                                </div>
+                                <div class=" col-sm-6 col-md-3 mb-2 wow bounceInUp" data-wow-duration="1.4s">
+                                 <a href="p.sideweb2.html">   <img src="img/toothbrush.jpg" class="img-thumbnail" alt=""> </a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 mb-2 wow bounceInUp" data-wow-duration="1.4s">
+                                  <a href="p.sideweb4.html">  <img src="img/dental floss.jpg" class="img-thumbnail" alt=""> </a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 mb-2 wow bounceInUp" data-wow-duration="1.4s">
+                                  <a href="p.sideweb5.html">  <img src="img/for kids.jpg" class="img-thumbnail" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+<section class="banner-sec">
+   <div class="container">
+	<h3 class="heading-large"><a href="P.education.html">Patient education</a></h3>
+    <div class="row">
+            <div class="col-md-3">
+        <div class="card"> <img class="img-fluid" src="img/tooth decay.jpg" alt="">
+                <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Issues</span> </div>
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="P.edusideweb1.html">Dental caries (tooth decay)</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>21/3</em></small></p>
+          </div>
+              </div>
+        <div class="card"> <img class="img-fluid" src="img/trauma.jpg" alt="">
+                <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Issues</span> </div>
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="P.edusideweb4.html">Oral trauma</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>23/2</em></small></p>
+          </div>
+              </div>
+      </div>
+            <div class="col-md-3">
+        <div class="card"> <img class="img-fluid" src="img/Gum disease.jpg" alt="">
+                <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Issues</span> </div>
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="P.edusideweb2.html">Periodontal (gum) disease</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>21/1</em></small></p>
+          </div>
+              </div>
+        <div class="card"> <img class="img-fluid" src="img/oralcancel.jpg" alt="">
+                <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Issues</span> </div>
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="P.edusideweb3.html">Oral Cancer!</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>15/3</em></small></p>
+          </div>
+              </div>
+      </div>
+            <div class="col-md-6 top-slider">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+              
+			
+			<!-- Indicators -->
+                <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+                
+              
+			
+			<!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                    <div class="news-block">
+                <div class="news-media"><img class="img-fluid" src="img/tooth decay.jpg" alt=""></div>
+                <div class="news-title">
+                        <h2 class=" title-large"><a href="P.edusideweb1.html">Dental caries (tooth decay)</a></h2>
+                      </div>
+                <div class="news-des">Dental caries result when plaque forms on the surface of a tooth and converts the free sugars (all sugars added to foods by the manufacturer, cook, or consumer, plus sugars naturally present in honey, syrups, and fruit juices) contained in foods and drinks into acids that destroy the tooth over time...</div>
+                <div class="time-text"><strong>21/3</strong></div>
+                <div></div>
+              </div>
+                  </div>
+            <div class="carousel-item">
+                    <div class="news-block">
+                <div class="news-media"><img class="img-fluid" src="img/Gum disease.jpg" alt=""> </div>
+                <div class="news-title">
+                        <h2 class=" title-large"><a href="P.edusideweb2.html">Periodontal (gum) disease</a></h2>
+                      </div>
+                <div class="news-des">Periodontal disease affects the tissues that both surround and support the tooth. The disease is characterized by bleeding or swollen gums (gingivitis), pain and sometimes bad breath. In its more severe form, the gum can come away from the tooth and supporting bone, causing teeth to become loose and sometimes...</div>
+                <div class="time-text"><strong>21/1</strong></div>
+                <div></div>
+              </div>
+                  </div>
+            <div class="carousel-item">
+                    <div class="news-block">
+                <div class="news-media"><img class="img-fluid" src="img/oralcancel.jpg" alt=""></div>
+                <div class="news-title">
+                        <h2 class=" title-large"><a href="P.edusideweb3.html">Oral Cancer: Symptoms, Causes and More.</a></h2>
+                      </div>
+                <div class="news-des">Oral cancer includes cancers of the lip, other parts of the mouth and the oropharynx. The global incidence of cancers of the lip and oral cavity) is estimated at 4 cases per 100 000 people. However, there is wide variation across the globe: around 20 cases per 100 000 people...</div>
+                <div class="time-text"><strong>15/3</strong></div>
+                <div></div>
+              </div>
+                  </div>
+          </div>
+              </div>
+      </div>
+          </div>
+	</div>
+      </section>
+	
+	
+<section class="section-01">
+        <div class="container">
+    <div class="row">
+            <div class="col-lg-8 col-md-12">
+        <h3 class="heading-large"><a href="Research.html">Research &nbsp;</a></h3>
+        <div class="">
+                <div class="col-lg-6 card">
+            <div class="card"> <img class="img-fluid" src="img/canabinoid.jpg" alt="">
+                    <div class="card-body">
+                <div class="news-title"><a href="research1.html">
+                  <h2 class=" title-small">Cannabinoid's role in oral health</h2>
+                  </a></div>
+                <p class="card-text">A study done by researchers in Belgium found that cannabinoid compounds were more effective at reducing the number of bacteria in plaque on teeth than famous synthetic tooth care products. , such as Oral B and Colgate. </p>
+                <p class="card-text"><small class="text-time"><em>12/3</em></small></p>
+              </div>
+                  </div>
+          </div>
+                <div class="col-lg-6 card">
+            <div class="card"> <img class="img-fluid" src="img/Water Flosser.jpg" alt="">
+                    <div class="card-body">
+                <div class="news-title"><a href="research2.html">
+                  <h2 class=" title-small">Water Flosser: A powerful dental care tool </h2>
+                  </a></div>
+                <p class="card-text">The water flosser is known as a mouth spray. The first machine was born in 1962 by a Colorado dentist with the help of a water engineer patient. Swabs use a stream of pressure water to wash away food debris, bacteria and plaque.</p>
+                <p class="card-text"><small class="text-time"><em>20/10/20</em></small></p>
+              </div>
+                  </div>
+          </div>
+                <div class="col-lg-6 card">
+            <div class="card"> <img class="img-fluid" src="img/Kin Gingival toothpaste.jpg" alt="">
+                    <div class="card-body">
+                <div class="news-title"><a href="research3.html">
+                  <h2 class=" title-small">Kin Gingival toothpaste </h2>
+                  </a></div>
+                <p class="card-text">Clorhexidine, the main ingredient in Kin Gingival, is an effective antibacterial active, sensitive to most bacteria that reside in the oral cavity, helping to prevent the growth of microorganisms from biological plaque.... </p>
+                <p class="card-text"><small class="text-time"><em>12/1</em></small></p>
+              </div>
+                  </div>
+          </div>
+                <div class="col-lg-6 card">
+            <div class="card"> <img class="img-fluid" src="img/TCoralhealth.jpg" alt="">
+                    <div class="card-body">
+                <div class="news-title"><a href="research4.html">
+                  <h2 class=" title-small">How to take care of your teeth </h2>
+                  </a></div>
+                <p class="card-text">Good oral care is essential to prevent toothache and help you look radiant. This is not difficult to do, but it does require you to develop good oral hygiene habits, eat a healthy diet ....</p>
+                <p class="card-text"><small class="text-time"><em>1/1</em></small></p>
+              </div>
+                  </div>
+          </div>
+              </div>
+      </div>
+            <aside class="col-lg-4 side-bar col-md-12">
+        <ul class="nav nav-tabs" role="tablist" id="myTab">
+                <li class="nav-item"> <a class="nav-link active" href="Professionnal.E.html" role="tab">Professional educationeducation</a> </li>
+              </ul>
+        
+        <!-- Profession.edu -->
+			
+        <div class="tab-content sidebar-tabing" id="nav-tabContent">
+                <div class="tab-pane active" id="home" role="tabpanel">
+                    <div class="media"> <a href="#"> <img class="d-flex mr-3" src="img/oralepide.jpg" alt=""></a>
+                    <div class="media-body">
+                        <div class="news-title">
+                            <h2 class="title-small"><a href="Pro.edu3.html">Oral research outline </a></h2>
+                        </div>
+						<p class="card-text">Good oral care is essential to prevent toothache and help you look radiant.</p>
+                        <div class="news-auther"><span class="time">12/2</span></div>
+                    </div>
+                  </div>
+            <div class="media"> <a href="Pro.edu1.html"> <img class="d-flex mr-3" src="img/OHR.jpg" alt=""></a>
+                    <div class="media-body">
+                <div class="news-title">
+                        <h2 class="title-small"><a href="Pro.edu1.html">Oral History review</a></h2>
+                      </div>
+				<p class="card-text">By definition, dentistry is a branch of medicine that is concerned with all informations about oral health </p>
+                <div class="news-auther"><span class="time">13/2</span></div>
+              </div>
+                  </div>
+            <div class="media"> <a href="#"> <img class="d-flex mr-3" src="img/8ways.jpg" alt=""></a>
+                    <div class="media-body">
+                <div class="news-title">
+                        <h2 class="title-small"><a href="Pro.edu2.html">4 signs of dental disease 'report problems with your health</a></h2>
+                      </div>
+				<p class="card-text">Teeth and gums can give subtle cues about your overall well-being. </p>
+                <div class="news-auther"><span class="time">13/2</span></div>
+              </div>
+                  </div>
+          </div>
+         </div>
+        <div class="video-sec">
+                <h4 class="heading-small">Featured Video</h4>
+                <div class="video-block">
+            <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TtNQx01uuXQ" allowfullscreen></iframe>
+                  </div>
+          </div>
+              </div>
+      </aside>
+          </div>
+  </div>
+      </section>
+     
+	<!-- Footer -->
+ <div class="container-fluid"  style="clear: both">
+    <div class="row footer-top">
+        <div class="col-sm-4 text-center">
+            <h4 class="ft-text-title">Media Name:Oral Health</h4>
+            <h6 class="ft-desp">Company Name:Group 7
+            </h6>
+			 <p> <i class="fa fa-map-marker" style="color: white">590 Cach Mang Thang Tam, Ward 11, District 3, Ho Chi Minh City</i>
+          </p>
+            <h4 class="details">
+                <a class="contact" href="tel:+977-1-4107223">
+                    <i class="fa fa-phone" aria-hidden="true"></i> +84-852107507</a>
+                </h4>
+            </div>
+            <div class="col-sm-4 text-center border-left">
+                <h4 class="ft-text-title">Our Team</h4>
+                <div class="address-member">
+                    <p class="member">
+                        <b>Director</b> : Duy Hưng
+                    </p>
+                    <p class="member">
+                        <b>Editor</b> : Thái Trịnh
+                    </p>
+                    <p class="member">
+                        <b>Reporter</b> : Trần Trung Nghĩa
+                    </p>
+                    <p class="member">
+                        <b>Reporter</b> : Duy Anh
+                    </p>
+               </div>
+           </div>
+           <div class="col-sm-4 col-xs-12 text-center border-left">
+            <h4 class="ft-text-title">About</h4>
+            <div class="pspt-dtls">
+                <a href="About US.html" class="about">About Us</a>
+                <a href="contact us.html" class="contact">Contact Us</a>
+                <br><br><br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+	
+	 <!-- Run slide -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Oral Health</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/project.css" rel="stylesheet" type="text/css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+		$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+
+$(window).load(function() {
+    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+    var itemlength = $('#myCarousel .item').length;
+    var triggerheight = Math.round(boxheight/itemlength+1);
+    $('#myCarousel .list-group-item').outerHeight(triggerheight);
+});
+
+var monthNames = [ "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December" ];
+var dayNames= ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
+
+var newDate = new Date();
+newDate.setDate(newDate.getDate() + 1);    
+$('#Date').html(dayNames[newDate.getDay()] + ", " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+	</script>
+</head>
+<body>
+<header>
+	<div class="small-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 date-sec">
+        <div id="Date"></div>
+      </div>
+            <div class="col-lg-3 offset-lg-5">
+        <div class="social-icon"> <a target="_blank" href="#" class=" fa fa-facebook"></a> <a target="_blank" href="#" class=" fa fa-twitter"></a> <a target="_blank" href="#" class=" fa fa-google-plus"></a> <a target="_blank" href="#" class=" fa fa-linkedin"></a> <a target="_blank" href="#" class=" fa fa-youtube"></a> <a target="_blank" href="#" class=" fa fa-vimeo-square"></a> </div>
+      </div>
+      </div>
+          </div>
+  </div>
+        <div class="top-head left">
+    <div class="container">
+            <div class="row">
+        <div class="col-md-6 col-lg-4">
+                <h1>Oral Health<small>Get informations for oral health</small></h1>
+              </div>
+      </div>
+          </div>
+  </div>
+</header>
+<section class="top-nav">
+    <nav class="navbar navbar-expand-lg py-0 navbar-light bg-light">
+        <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ">
+        <li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+             <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
+			 <li class="nav-item"><a class="nav-link" href="P.education.html">Patient education</a></li>
+			 <li class="nav-item"><a class="nav-link" href="Research.html">Research</a></li> 
+             <li class="nav-item"><a class="nav-link" href="Professionnal.E.html">Professional education</a></li>
+   			 <li class="nav-item"><a class="nav-link" href="About US.html">About Us</a></li>
+             <li class="nav-item"><a class="nav-link" href="contact us.html">Contact Us</a></li>
+      </ul>
+            <form class="ml-auto">
+        <div class="search">
+                <input type="text" class="form-control" maxlength="64" placeholder="Search" />
+                <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+              </div>
+      </form>
+          </div>
+  </div>
+      </nav>
+</section>
+	
+	<section class="banner-sec">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div id="product-slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/kidsmile.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/kidsmile.jpg" class="d-block" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <h2 class="single-product-title">
+                How to Make Oral Health Education for Children Fun and Effective
+              </h2>
+              <p class="product-description">Professional education </p>
+              <h3 class="single-product-description">Informations:</h3>
+              <ul class="single-product-description-list">
+				  <li>Here at The Happy Tooth, we take pride in being a great practice for dentistry for kids. And we often write about children’s dental health. So, you can start gathering information simply by browsing our blog and subscribing to our newsletter.
+				  For more tips, plus videos, games, and puzzles, check out the resources at mouthhealthykids.org. This site is run by the American Dental Association (ADA) and provides a lot of great expert advice in a way kids can understand.
+				  If you are a teacher or group leader, there are some great videos and activities provided by the Colgate company. Parents, too, can find a lot of useful information on their website. While Colgate is interested in selling toothpaste, their materials are very much focused on the health aspects of dental health and dentistry for kids.</li>
+				  <li>Finally, we realize that you might have specific questions that you want to ask a dentist in-person.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+	
+	<!-- Footer -->
+ <div class="container-fluid"  style="clear: both">
+    <div class="row footer-top">
+        <div class="col-sm-4 text-center">
+            <h4 class="ft-text-title">Media Name:Oral Health</h4>
+            <h6 class="ft-desp">Company Name:Group 7
+            </h6>
+			 <p> <i class="fa fa-map-marker" style="color: white">590 Cach Mang Thang Tam, Ward 11, District 3, Ho Chi Minh City</i>
+          </p>
+            <h4 class="details">
+                <a class="contact" href="tel:+977-1-4107223">
+                    <i class="fa fa-phone" aria-hidden="true"></i> +84-852107507</a>
+                </h4>
+            </div>
+            <div class="col-sm-4 text-center border-left">
+                <h4 class="ft-text-title">Our Team</h4>
+                <div class="address-member">
+                    <p class="member">
+                        <b>Director</b> : Duy Hưng
+                    </p>
+                    <p class="member">
+                        <b>Editor</b> : Thái Trịnh
+                    </p>
+                    <p class="member">
+                        <b>Reporter</b> : Trần Trung Nghĩa
+                    </p>
+                    <p class="member">
+                        <b>Reporter</b> : Duy Anh
+                    </p>
+               </div>
+           </div>
+           <div class="col-sm-4 col-xs-12 text-center border-left">
+            <h4 class="ft-text-title">About</h4>
+            <div class="pspt-dtls">
+                <a href="About US.html" class="about">About Us</a>
+                <a href="contact us.html" class="contact">Contact Us</a>
+                <br><br><br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

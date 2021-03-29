@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Oral Health</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/project.css" rel="stylesheet" type="text/css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+		$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+
+$(window).load(function() {
+    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+    var itemlength = $('#myCarousel .item').length;
+    var triggerheight = Math.round(boxheight/itemlength+1);
+    $('#myCarousel .list-group-item').outerHeight(triggerheight);
+});
+
+var monthNames = [ "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December" ];
+var dayNames= ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
+
+var newDate = new Date();
+newDate.setDate(newDate.getDate() + 1);    
+$('#Date').html(dayNames[newDate.getDay()] + ", " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+	</script>
+</head>
+<body>
+<header>
+	<div class="small-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 date-sec">
+        <div id="Date"></div>
+      </div>
+            <div class="col-lg-3 offset-lg-5">
+        <div class="social-icon"> <a target="_blank" href="#" class=" fa fa-facebook"></a> <a target="_blank" href="#" class=" fa fa-twitter"></a> <a target="_blank" href="#" class=" fa fa-google-plus"></a> <a target="_blank" href="#" class=" fa fa-linkedin"></a> <a target="_blank" href="#" class=" fa fa-youtube"></a> <a target="_blank" href="#" class=" fa fa-vimeo-square"></a> </div>
+      </div>
+      </div>
+          </div>
+  </div>
+        <div class="top-head left">
+    <div class="container">
+            <div class="row">
+        <div class="col-md-6 col-lg-4">
+                <h1>Oral Health<small>Get informations for oral health</small></h1>
+              </div>
+      </div>
+          </div>
+  </div>
+</header>
+<section class="top-nav">
+    <nav class="navbar navbar-expand-lg py-0 navbar-light bg-light">
+        <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ">
+        <li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+             <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
+			 <li class="nav-item"><a class="nav-link" href="P.education.html">Patient education</a></li>
+			 <li class="nav-item"><a class="nav-link" href="Research.html">Research</a></li> 
+             <li class="nav-item"><a class="nav-link" href="Professionnal.E.html">Professional education</a></li>
+   			 <li class="nav-item"><a class="nav-link" href="About US.html">About Us</a></li>
+             <li class="nav-item"><a class="nav-link" href="contact us.html">Contact Us</a></li>
+      </ul>
+            <form class="ml-auto">
+        <div class="search">
+                <input type="text" class="form-control" maxlength="64" placeholder="Search" />
+                <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+              </div>
+      </form>
+          </div>
+  </div>
+      </nav>
+</section>
+
+<section class="banner-sec">
+   <div class="container">
+	<h3 class="heading-large">Products</h3>
+    <div class="row">
+            <div class="col-md-3">
+        <div class="card"> <img class="img-fluid" src="img/E.toothbrush.jpg" alt="">
+                <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Products</span> </div>
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="p.sideweb1.html">Electrical Toothbrush</a></h2>
+                  </div>
+          </div>
+              </div>
+        <div class="card"> <img  class="img-fluid" src="img/toothbrush.jpg" alt="">
+                <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Products</span> </div>
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="p.sideweb2.html">Toothbrush</a></h2>
+                  </div>
+          </div>
+              </div>
+      </div>
+            <div class="col-md-3">
+        <div class="card"> <img class="img-fluid" src="img/tooth pastes.jpg" alt="">
+                <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Products</span> </div>
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="p.sideweb3.html">Tooth pastes</a></h2>
+                  </div>
+          </div>
+              </div>
+        <div class="card"> <img class="img-fluid" src="img/dental floss.jpg" alt="">
+                <div class="card-img-overlay"> <span class="badge badge-pill badge-danger">Products</span> </div>
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="p.sideweb4.html">Dental floss</a></h2>
+                  </div>
+          </div>
+              </div>
+      </div>
+            <div class="col-md-6 top-slider">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+              
+			
+			<!-- Indicators -->
+                <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          </ol>
+                
+              
+			
+			<!-- Wrapper for slides -->
+                <div class="card" role="listbox">
+            <div class="carousel-item active">
+                    <div class="news-block">
+                <div class="news-media"> <img class="img-fluid" src="img/for kids.jpg" alt=""></div>
+                <div class="news-title">
+                        <h2 class=" title-large"><a href="p.sideweb5.html">For kids</a></h2>
+                      </div>
+                <div class="news-des">Children's dental care tools.
+					<br>Helping them to have strong teeth and at the same time contributing to their beautiful smiles. </div>
+              </div>
+                  </div>
+              </div>
+                  </div>
+          </div>
+              </div>
+      </div>
+      </section>	
+	
+	<!-- Footer -->
+ <div class="container-fluid"  style="clear: both">
+    <div class="row footer-top">
+        <div class="col-sm-4 text-center">
+            <h4 class="ft-text-title">Media Name:Oral Health</h4>
+            <h6 class="ft-desp">Company Name:Group 7
+            </h6>
+			 <p> <i class="fa fa-map-marker" style="color: white">590 Cach Mang Thang Tam, Ward 11, District 3, Ho Chi Minh City</i>
+          </p>
+            <h4 class="details">
+                <a class="contact" href="tel:+977-1-4107223">
+                    <i class="fa fa-phone" aria-hidden="true"></i> +84-852107507</a>
+                </h4>
+            </div>
+            <div class="col-sm-4 text-center border-left">
+                <h4 class="ft-text-title">Our Team</h4>
+                <div class="address-member">
+                    <p class="member">
+                        <b>Director</b> : Duy Hưng
+                    </p>
+                    <p class="member">
+                        <b>Editor</b> : Thái Trịnh
+                    </p>
+                    <p class="member">
+                        <b>Reporter</b> : Trần Trung Nghĩa
+                    </p>
+                    <p class="member">
+                        <b>Reporter</b> : Duy Anh
+                    </p>
+               </div>
+           </div>
+           <div class="col-sm-4 col-xs-12 text-center border-left">
+            <h4 class="ft-text-title">About</h4>
+            <div class="pspt-dtls">
+                <a href="About US.html" class="about">About Us</a>
+                <a href="contact us.html" class="contact">Contact Us</a>
+                <br><br><br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
